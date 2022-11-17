@@ -1,6 +1,7 @@
 const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
+const layersOrder = require('./layersOrders');
 
 const network = NETWORK.eth;
 
@@ -25,15 +26,7 @@ const solanaMetadata = {
 const layerConfigurations = [
   {
     growEditionSizeTo: 5,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
-    ],
+    layersOrder
   },
 ];
 
