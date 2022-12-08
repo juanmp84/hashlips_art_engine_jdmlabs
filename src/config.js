@@ -1,7 +1,8 @@
 const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
-const layersOrder = require('./layersOrders');
+// const layersOrder = require('./layersOrders');
+const layerConfigurations = require('./layerConfigurations');
 
 const network = NETWORK.eth;
 
@@ -23,12 +24,12 @@ const solanaMetadata = {
 };
 
 // If you have selected Solana then the collection starts from 0 automatically
-const layerConfigurations = [
-  {
-    growEditionSizeTo: 5,
-    layersOrder
-  },
-];
+// const layerConfigurations = [
+//   {
+//     growEditionSizeTo: 5,
+//     layersOrder
+//   },
+// ];
 
 const shuffleLayerConfigurations = false;
 
